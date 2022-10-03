@@ -1,0 +1,100 @@
+<%- include('partials/header') -%>
+
+<main class="container">
+    <div class="home">
+        <MainNav />
+        <div class='main'>
+          <div class='main__text'>
+            <h1>Mentor Me</h1>
+            <span>Finding a mentor is as easy as 1, 2, 3...</span>
+            <Link to="/login"> <button class='homeBTN'>Get Started &#8594;</button></Link>
+          </div>
+          <div class= "image">
+            <div>
+              <img src="/imgs/home.jpg" alt="group of friends"></img>
+            </div>
+          </div>
+        </div>
+    
+    
+        <div id='about'>
+          <div class='aboutDetails'>
+            <h2>No one gets there alone.</h2>
+            <p><bold>Mentor Me </bold> helps connect mentors and mentees from all over the world. Whether you are looking for a professional mentor, or peer mentor, 
+              <bold> Mentor Me</bold> is for you. Mentorship is valuable because it allows you to network, connect with other individuals that have
+              navigated your desired path, and can accelerate you to places you've only dreamed. It's 100% FREE so give it a try!
+            </p>
+            <Link to="/login"> <button class='homeBTN'>Get Connected</button></Link>
+          </div>
+        </div>
+    
+        <!-- Meet the Mentors -->
+        <div id="team">
+          <h3>Meet the <strong>Mentor Me</strong> Community</h3>
+        <div class='profileImages'>
+          <div class='introduction'>
+            <img src="/imgs/profile10.jpg" alt="mentor" />
+            <div class='teamIntro'>
+              <p>"I love connecting with others that have an interest in tech."</p>
+              <span class='testimonialName'>-Armani Laubraux</span>
+              <span class='testimonialTitle'>Software Engineer at Dell</span>
+            </div>
+          </div>
+          <div class='introduction'>
+            <img src="/imgs/profile1.jpg" alt="mentor" />
+            <div class='teamIntro'>
+              <p>"I appreciate what Mentor Me is doing to create community."</p>
+              <span class='testimonialName'>-Abram Labell</span>
+              <span class='testimonialTitle'>Student at University of Chicago</span>
+            </div>
+          </div>
+          <div class='introduction'>
+            <img src="/imgs/profile2.jpg" alt="mentor" />
+            <div class='teamIntro'>
+              <p>"After teaching for 25 years, I'm excited to connect with young educators."</p>
+              <span class='testimonialName'>-Karen Adams</span>
+              <span class='testimonialTitle'>Retired Teacher</span>
+            </div>
+          </div>
+          <div class='introduction'>
+            <img src="/imgs/profile3.jpg" alt="mentor" />
+            <div class='teamIntro'>
+              <p>"Mentor Me has made it easier to learn about career paths that I never knew existed."</p>
+                <span class='testimonialName'>-Lariah McKnight</span>
+              <span class='testimonialTitle'>Student at Texas Tech</span>
+            </div>
+          </div>
+        </div>
+        </div>
+      
+    
+        <div class="bg-gray-50">
+          <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              <span class="block ad">Ready to get connected?</span>
+              <span class="block text-indigo-600 ad2">Let's start your journey today.</span>
+            </h2>
+            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+              <div class="inline-flex rounded-md shadow button1">
+                <a
+                  href="/login"
+                  class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
+                >
+                  Get started
+                </a>
+              </div>
+              <div class="ml-3 inline-flex rounded-md shadow button2">
+                <a
+                  href="#about"
+                  class="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-indigo-600 hover:bg-indigo-50"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+</main>
+    
+
+<%- include('partials/footer') -%>
