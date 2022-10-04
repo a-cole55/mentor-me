@@ -3,7 +3,7 @@
   <div class="row mt-5">
       <div class="col-6">
           <div>
-              <p><strong>User Name</strong>: <%= user.userName %></p>
+              <p><strong>Name</strong>: <%= user.userName %></p>
               <!-- <p><strong>Email</strong>: <%= user.email %></p> -->
               <!-- <a href="/logout" class="col-3 btn btn-primary">Logout</a> -->
           </div>
@@ -12,24 +12,40 @@
             <form action="/post/createPost" enctype="multipart/form-data" method="POST">
               <div class="mb-3">
                   <label for="title" class="form-label">Title</label>
-                  <input type="text" class="form-control" id="title" name="title">
+                  <input type="text" class="form-control" id="title" name="title" placeholder="Ex. Student, Teacher, etc.">
               </div>
               <div class="mb-3">
-                <label for="title" class="form-label">Company/School</label>
+                <label for="companySchool" class="form-label">Company / School</label>
                 <input type="text" class="form-control" id="job" name="job">
             </div>
             <div class="mb-3">
-              <label for="title" class="form-label">Location</label>
+              <label for="location" class="form-label">Location</label>
               <input type="text" class="form-control" id="location" name="location">
           </div>
             <div class="mb-3">
-              <label for="caption" class="form-label">About</label>
+              <label for="desc" class="form-label">About</label>
               <textarea class="form-control" id="about" name="about"></textarea>
             </div>
               <div class="mb-3">
                 <label for="imgUpload" class="form-label">Image</label>
                 <input type="file" class="form-control" id="imageUpload" name="file">
               </div>
+              <div class="mb-3">
+                <label for="linkedIn" class="form-label">LinkedIn URL</label>
+                <input type="text" class="form-control" id="linkedIn" name="linkedIn">
+            </div>
+            <div class="mb-3">
+              <label for="twitter" class="form-label">Twitter URL</label>
+              <input type="text" class="form-control" id="twitter" name="twitter">
+          </div>
+          <div class="mb-3">
+            <label for="facebook" class="form-label">Facebook URL</label>
+            <input type="text" class="form-control" id="facebook" name="facebook">
+        </div>
+        <div class="mb-3">
+          <label for="instagram" class="form-label">Instagram URL</label>
+          <input type="text" class="form-control" id="instagram" name="instagram">
+      </div>
               <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
             </form>
           </div>
@@ -53,13 +69,34 @@
                           <img src="https://randomuser.me/api/portraits/women/20.jpg" alt="profile-image" class="profile"/>
                           <div class="card-content">
                             <h2>Savannah Fields<small>Engineer</small></h3>
+                              <img class="fa" src="/imgs/icons8-location-64.png"></img>
                               <span>Location</span>
-                              <p>About:</p>
+                              <p>Hi I'm a Software Engineer at Dell. I love my job and I love talking to up and coming engineers.
+                                If you have any questions feel free to reach out.
+                              </p>
                             <div class="icon-block">
-                              <a href="#"><i class="fa fa-facebook"></i></a>
-                              <a href="#"> <i class="fa fa-twitter"></i></a>
-                              <a href="#"> <i class="fa fa-google-plus"></i></a>
+                              <a class="socials" href="#">
+                                <span>
+                                  <img class="fa fa-facebook" src="/imgs/icons8-linkedin-color.svg"></img>
+                                </span>
+                              </a>
+                              <a class="socials" href="#">
+                                <span>
+                                  <img class="fa fa-facebook" src="/imgs/icons8-facebook-color.svg"></img>
+                                </span>
+                              </a>
+                              <a class="socials" href="#"> 
+                                <span>
+                                  <img class="fa fa-twitter" src="/imgs/icons8-instagram-color.svg"></img>
+                                </span>
+                              </a>
+                              <a class="socials" href="#"> 
+                                <span>
+                                  <img class="fa fa-google-plus" src="/imgs/icons8-twitter-color.svg"></img>
+                                </span>
+                              </a>
                             </div>
+                            
                           </div>
                         </div>
                         </div>
