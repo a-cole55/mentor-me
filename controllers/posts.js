@@ -32,16 +32,24 @@ module.exports = {
       const result = await cloudinary.uploader.upload(req.file.path);
 
       await Post.create({
+        name: req.body.name,
         title: req.body.title,
         image: result.secure_url,
         cloudinaryId: result.public_id,
-        caption: req.body.caption,
-        likes: 0,
+        companySchool: req.body.companySchool,
+        desc: req.body.desc,
+        location: req.body.location,
+        facebook: req.body.facebook,
+        instagram: req.body.instagram,
+        twitter: req.body.twitter,
+        linkedIn: req.body.linkedIn,
+        favorites: [],
         user: req.user.id,
       });
       console.log("Post has been added!");
       res.redirect("/profile");
     } catch (err) {
+      console.log(req.body);
       console.log(err);
     }
   },

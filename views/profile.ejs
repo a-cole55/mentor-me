@@ -1,5 +1,5 @@
 <%- include('partials/min-header') -%>
-<div class="container">
+<div class="container editProfile">
   <div class="row mt-5">
       <div class="col-6">
           <div>
@@ -10,13 +10,17 @@
           <div class="mt-5">
             <h2>Edit Profile</h2>
             <form action="/post/createPost" enctype="multipart/form-data" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="First Name, Last Name">
+            </div>
               <div class="mb-3">
                   <label for="title" class="form-label">Title</label>
                   <input type="text" class="form-control" id="title" name="title" placeholder="Ex. Student, Teacher, etc.">
               </div>
               <div class="mb-3">
                 <label for="companySchool" class="form-label">Company / School</label>
-                <input type="text" class="form-control" id="job" name="job">
+                <input type="text" class="form-control" id="companySchool" name="companySchool">
             </div>
             <div class="mb-3">
               <label for="location" class="form-label">Location</label>
@@ -24,7 +28,7 @@
           </div>
             <div class="mb-3">
               <label for="desc" class="form-label">About</label>
-              <textarea class="form-control" id="about" name="about"></textarea>
+              <textarea class="form-control" id="about" name="desc"></textarea>
             </div>
               <div class="mb-3">
                 <label for="imgUpload" class="form-label">Image</label>
@@ -51,7 +55,7 @@
           </div>
       </div>
       <div class="col-6">
-        <ul class="row list-unstyled">
+        <!-- <ul class="row list-unstyled">
         <% for(var i=0; i<posts.length; i++) {%>
           <li class="col-6 justify-content-between mt-5">
             <a href="/post/<%= posts[i]._id%>">
@@ -59,38 +63,38 @@
             </a>
           </li>
         <% } %>
-        </ul>
+        </ul> -->
         <div class="row justify-content-center mt-5">
           <a class="btn btn-primary" href="/feed">Return to Feed</a>
 
           <!-- Profile Card -->
+            <% for(var i=0; i<posts.length; i++) {%>
                     <div class="card profile-card-1">
                         <div class="cardDetails">
-                          <img src="https://randomuser.me/api/portraits/women/20.jpg" alt="profile-image" class="profile"/>
+                          <img src="<%= posts[i].image%>" alt="profile-image" class="profile"/>
                           <div class="card-content">
-                            <h2>Savannah Fields<small>Engineer</small></h3>
+                            <h2><%= posts[i].name%><small><%= posts[i].title%></small></h3>
                               <img class="fa" src="/imgs/icons8-location-64.png"></img>
-                              <span>Location</span>
-                              <p>Hi I'm a Software Engineer at Dell. I love my job and I love talking to up and coming engineers.
-                                If you have any questions feel free to reach out.
+                              <span><%= posts[i].location%></span>
+                              <p><%= posts[i].desc%>
                               </p>
                             <div class="icon-block">
-                              <a class="socials" href="#">
+                              <a class="socials" href="<%= posts[i].linkedIn%>">
                                 <span>
                                   <img class="fa fa-facebook" src="/imgs/icons8-linkedin-color.svg"></img>
                                 </span>
                               </a>
-                              <a class="socials" href="#">
+                              <a class="socials" href="<%= posts[i].facebook%>">
                                 <span>
                                   <img class="fa fa-facebook" src="/imgs/icons8-facebook-color.svg"></img>
                                 </span>
                               </a>
-                              <a class="socials" href="#"> 
+                              <a class="socials" href="<%= posts[i].instagram%>"> 
                                 <span>
                                   <img class="fa fa-twitter" src="/imgs/icons8-instagram-color.svg"></img>
                                 </span>
                               </a>
-                              <a class="socials" href="#"> 
+                              <a class="socials" href="<%= posts[i].twitter%>"> 
                                 <span>
                                   <img class="fa fa-google-plus" src="/imgs/icons8-twitter-color.svg"></img>
                                 </span>
@@ -100,6 +104,7 @@
                           </div>
                         </div>
                         </div>
+            <% } %>
     </div>
   </div>
 </div>
