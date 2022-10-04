@@ -1,18 +1,58 @@
 <%- include('partials/min-header') -%>
   <div class="container">
     <div class="row justify-content-center mt-5">
-      <ul class="row list-unstyled">
+
+      <!-- <ul class="row list-unstyled">
         <% for(var i=0; i<posts.length; i++) {%>
           <li class="col-6 justify-content-between mt-5">
             <a href="/post/<%= posts[i]._id%>">
               <img class="img-fluid" src="<%= posts[i].image%>">
-            </a>
-
-
-            
+            </a> 
           </li>
         <% } %>
-        </ul>
+        </ul> -->
+
+        <!-- Profile Card -->
+        <% for(var i=0; i<posts.length; i++) {%>
+          <div class="card profile-card-1">
+              <div class="cardDetails">
+                <img src="<%= posts[i].image%>" alt="profile-image" class="profile"/>
+                <div class="card-content">
+                  <h2><%= posts[i].name%><small><%= posts[i].title%></small></h3>
+                    <img class="fa" src="/imgs/icons8-location-64.png"></img>
+                    <span><%= posts[i].location ?  posts[i].location : "Not Specified"%>
+                     </span>
+                    <p><%= posts[i].desc%>
+                    </p>
+                  <div class="icon-block">
+                    <a class="socials" href="<%= posts[i].linkedIn%>">
+                      <span>
+                        <img class="fa fa-facebook" src="/imgs/icons8-linkedin-color.svg"></img>
+                      </span>
+                    </a>
+                    <a class="socials" href="<%= posts[i].facebook%>">
+                      <span>
+                        <img class="fa fa-facebook" src="/imgs/icons8-facebook-color.svg"></img>
+                      </span>
+                    </a>
+                    <a class="socials" href="<%= posts[i].instagram%>"> 
+                      <span>
+                        <img class="fa fa-twitter" src="/imgs/icons8-instagram-color.svg"></img>
+                      </span>
+                    </a>
+                    <a class="socials" href="<%= posts[i].twitter%>"> 
+                      <span>
+                        <img class="fa fa-google-plus" src="/imgs/icons8-twitter-color.svg"></img>
+                      </span>
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+              </div>
+  <% } %>
+
+
     </div>
   </div>  
 <%- include('partials/footer') -%>

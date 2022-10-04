@@ -75,7 +75,8 @@
                           <div class="card-content">
                             <h2><%= posts[i].name%><small><%= posts[i].title%></small></h3>
                               <img class="fa" src="/imgs/icons8-location-64.png"></img>
-                              <span><%= posts[i].location%></span>
+                              <span><%= posts[i].location ?  posts[i].location : "Not Specified"%>
+                               </span>
                               <p><%= posts[i].desc%>
                               </p>
                             <div class="icon-block">
