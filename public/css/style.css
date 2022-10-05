@@ -391,14 +391,14 @@ nav > a{
 .testimonialName{
     margin:5px 0 0 0;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 .testimonialTitle{
     font-size: 12px;
     margin:0;
-    font-weight: 100;
+    font-weight: 600;
     font-display: block;
 }
 .title{
