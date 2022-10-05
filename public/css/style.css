@@ -419,6 +419,50 @@ nav > a{
     align-items: center;
     margin-top: 8%;
 }
+.cta-text{
+  background-color: rgba(249, 249, 249, 0.9);
+  padding:5% 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.cta-heading{
+  margin-right: 15%;
+}
+.cta-heading > span:first-child{
+  display: block;
+  font-weight: 700;
+  font-size: 40px;
+}
+.cta-heading > span:nth-child(2){
+  font-size: 26px;
+  color:#8a97a0;
+  padding:0 50px;
+}
+.ctaBTN, .ctaBTN > a{
+  color: #FFF;
+  text-align: center;
+  background-color: #38A6FF;
+  /* border-radius: 7px; */
+}
+.ctaBTN{
+  border:#e0e0e0 solid 1px;
+  box-shadow: inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: #e0e0e0 1px 1px 2px;
+  cursor: pointer;
+}
+.ctaBTN > a{
+  height:100%;
+  width: 100%;
+  padding:20px;
+}
+.ctaBTN:hover, .ctaBTN > a:hover{
+  background-color: #8a97a0;
+}
 .signup{
     margin-top: 2%;
 }
