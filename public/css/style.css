@@ -31,7 +31,7 @@ body {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-evenly;
-    padding:1% 0;
+    padding:20px 0;
   }
   .socialMedia a{
     color:white;
@@ -616,10 +616,10 @@ nav > a{
 }
 .profileImages{ 
   padding:50px;
-  width:90%;
+  width:100%;
 }
 .introduction{
-  width:320px; 
+  width:250px; 
 }
 .introduction img{
   height:450px
@@ -646,10 +646,33 @@ nav > a{
   left: -6.4em;
   width:40%;
 }
+.profileImages{ 
+  width:90%;
 }
+.introduction{
+  width:320px; 
+}
+.cta-heading > span:first-child{
+  font-size: 36px;
+}
+.cta-heading > span:nth-child(2){
+  font-size: 26px;
+}
+}
+
 @media screen and (max-width:1050px){
 .home{
   margin-top: 6%;
+}
+.cta-heading{
+  margin-right: 5%;
+}
+.cta-heading > span:first-child{
+  font-size: 32px;
+}
+.cta-heading > span:nth-child(2){
+  font-size: 22px;
+  padding:0 40px;
 }
 }
 @media screen and (max-width:1000px){
@@ -697,6 +720,18 @@ nav > a{
 @media screen and (max-width:900px){
   .image::before{
     width:50%;
+  }
+  .cta-text{
+    flex-direction: column;
+    text-align: center;
+    padding:5% 10%;
+  }
+  .cta-heading > span:first-child{
+    font-size: 32px;
+  }
+  .cta-heading > span:nth-child(2){
+    font-size: 22px;
+    padding:0;
   }
 }
 
@@ -784,6 +819,19 @@ nav > a{
   font-size: 18px;
   line-height: 1.5em;
 }
+.cta{
+  margin-bottom: 50px;
+}
+.cta-heading > span:first-child{
+  font-size: 28px;
+}
+.cta-heading > span:nth-child(2){
+  font-size: 22px;
+}
+.ctaBTN{
+  height:4em;
+  margin: 5px 0 20px 0;
+}
 }
 @media screen and (max-width:520px){
 /*Nav Bar */
@@ -841,8 +889,18 @@ width:100px;
   background-color:#8a97a0;
   border-color:#8a97a0;
 }
-
-
+#team{
+  margin: 5% 0;
+}
+.introduction{
+  width:280px; 
+}
+.cta-heading > span:first-child{
+  font-size: 26px;
+}
+.cta-heading > span:nth-child(2){
+  font-size: 20px;
+}
 .ad{
   font-size: 36px;
 }
@@ -869,5 +927,11 @@ width:100px;
   /* color:rgba(0,0,0,0.5); */
   background-color: rgba(56,166,255,0.1);
 }
-
+footer{
+  padding-top:10px;
+  height:100px
+}
+footer a, footer h3{
+  font-size: 10px;
+}
 }
