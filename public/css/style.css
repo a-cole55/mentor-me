@@ -112,7 +112,7 @@ header, nav{
     position:fixed;
     top:0;
     right:0;
-    z-index: 1;
+    z-index: 10;
 }
 .mainNav{
     height:60px;
@@ -294,6 +294,7 @@ nav > a{
     font-size: 36px;
     color:black;
     font-weight: bold;
+    text-align: center;
 }
 .aboutDetails p{
     font-size: 20px;
@@ -670,7 +671,9 @@ nav > a{
   .image::before{
     width:50%;
   }
-
+  .aboutDetails{
+    width:90%;
+}
 }
 
 @media screen and (max-width:825px){
@@ -713,44 +716,6 @@ nav > a{
 }
 
 /*Start Here*/
-#about{
-    min-height: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 0 5% 0;
-}
-.aboutDetails{
-    width:65%;
-    padding:7% 5% 4% 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.aboutDetails h2{
-    font-size: 36px;
-    color:black;
-    font-weight: bold;
-}
-.aboutDetails p{
-    font-size: 20px;
-    line-height: 1.5em;
-    text-align: center;
-}
-.aboutDetails bold{
-    font-weight: bold;
-    color:black;
-}
-.aboutDetails button{
-    background-color: #38A6FF;
-    border-color: #38A6FF;
-}
-.aboutDetails button:hover{
-    background-color: #8a97a0;
-    border-color: #8a97a0;
-}
 .ad{
     font-size: 36px;
 }
@@ -778,6 +743,17 @@ nav > a{
     background-color: rgba(56,166,255,0.1);
 }
 }
+
+@media screen and (max-width:700px){
+  /*About*/
+.aboutDetails h2{
+  font-size: 32px;
+}
+.aboutDetails p{
+  font-size: 18px;
+  line-height: 1.5em;
+}
+}
 @media screen and (max-width:520px){
 /*Nav Bar */
 .home{
@@ -786,7 +762,7 @@ nav > a{
   justify-content: center;
   background-color: white;
   width:100%;
-  margin-top: 4.2%;
+  margin-top: 13%;
 }
 li{
   width:80px;
@@ -794,7 +770,9 @@ li{
 #logo{
 width:100px;
 }
-
+.main{
+  height:500px;
+}
 .main__text h1{
   font-size: 3.2rem;
 }
@@ -802,6 +780,18 @@ width:100px;
 .main__text span{
   font-size: 1rem;
 }
+
+  /*About*/
+  .aboutDetails{
+    padding:4% 5%;
+  }
+  .aboutDetails h2{
+    font-size: 28px;
+  }
+  .aboutDetails p{
+    font-size: 16px;
+    line-height: 1.5em;
+  }
 
 .homeBTN{
   background-color: #38A6FF;
@@ -821,44 +811,7 @@ width:100px;
   border-color:#8a97a0;
 }
 
-#about{
-  min-height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 0 5% 0;
-}
-.aboutDetails{
-  width:65%;
-  padding:7% 5% 4% 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.aboutDetails h2{
-  font-size: 36px;
-  color:black;
-  font-weight: bold;
-}
-.aboutDetails p{
-  font-size: 20px;
-  line-height: 1.5em;
-  text-align: center;
-}
-.aboutDetails bold{
-  font-weight: bold;
-  color:black;
-}
-.aboutDetails button{
-  background-color: #38A6FF;
-  border-color: #38A6FF;
-}
-.aboutDetails button:hover{
-  background-color: #8a97a0;
-  border-color: #8a97a0;
-}
+
 .ad{
   font-size: 36px;
 }
