@@ -355,32 +355,35 @@ nav > a{
 .profileImages{
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;  
-    padding:20px 200px 50px 200px;
+    padding:50px 100px;
+    width:100%;
 }
 .introduction{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    width:25%;  
+    width:300px;  
     position: relative;
     font-family:'Montserrat', sans-serif;
     font-weight: bold;
+    padding: 5px
 }
 .introduction img{
-    max-width: 400px;
-    max-height: 500px;
+  width: 100%;
+  height: 450px;
 }
 .teamIntro{
-    width: 300px;
-    height: 120px;
+    width: 90%;
+    height: 100px;
     position: absolute;
-    bottom: 0;
-    background-color:rgba(255, 255, 255, 0.85);
+    bottom: 0.3em;
+    background-color:rgba(0,0,0,0.9);
     text-align: center;
-    color:rgba(0, 0, 0, 1);
+    color:rgba(255,255,255,0.9);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -391,14 +394,7 @@ nav > a{
 .teamIntro p{
     font-weight: bold;
     margin:0;
-
-}
-.testimonialName{
-    margin:0;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+    line-height: 1em;
 }
 .testimonialTitle{
     font-size: 12px;
@@ -591,14 +587,21 @@ nav > a{
   margin-bottom: 10%;
 }
 @media screen and (max-width:1380px){
-  .main__text h1{
-    font-size: 3.5rem;
+.main__text h1{
+  font-size: 3.5rem;
 }
 .home{
   margin-top: 5%;
 }
 .main img{
   width:110%
+}
+.introduction{
+  width:280px; 
+}
+.profileImages{ 
+  padding:50px;
+  width:100%;
 }
 }
 @media screen and (max-width:1250px) {
@@ -610,6 +613,16 @@ nav > a{
     width:30%;
     height:100%;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.profileImages{ 
+  padding:50px;
+  width:90%;
+}
+.introduction{
+  width:320px; 
+}
+.introduction img{
+  height:450px
 }
 }
 @media screen and (max-width:1184px){
@@ -653,6 +666,16 @@ nav > a{
 .main__text h1{
   font-size: 3.5rem;
 }
+.aboutDetails{
+  width:90%;
+}
+.introduction{
+  width:300px; 
+}
+.introduction img{
+  height:380px
+}
+
 }
 @media screen and (max-width:948px){
   .main img{
@@ -666,14 +689,15 @@ nav > a{
   width:48%;
   left: -6.25em;
 }
+.profileImages{ 
+  padding:50px;
+  width:90%;
+}
 }
 @media screen and (max-width:900px){
   .image::before{
     width:50%;
   }
-  .aboutDetails{
-    width:90%;
-}
 }
 
 @media screen and (max-width:825px){
@@ -714,7 +738,14 @@ nav > a{
 .image::before{
   display:none;
 }
-
+#team > h3{
+  font-size: 34px;
+  text-align: center;
+}
+.profileImages{ 
+  padding:50px;
+  width:100%;
+}
 /*Start Here*/
 .ad{
     font-size: 36px;
