@@ -212,7 +212,7 @@ nav > a{
   background: white;
 }
 .main__text{
-  width:50%;
+  width:800px;
   height:100%;
   padding:5%;
   display:flex;
@@ -233,7 +233,7 @@ nav > a{
 }
 
 .image{
-  max-width:55%;
+  max-width:1250px;
   height:100%;
   position: relative;
   overflow: hidden;
@@ -272,12 +272,12 @@ nav > a{
 }
 
 #about{
-  min-height: 200px;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 0 5% 0;
+  margin: 80px 0 30px 0;
 }
 .aboutDetails{
   width:65%;
@@ -347,6 +347,7 @@ nav > a{
   align-items: center;
   width:100%;
   margin-bottom: 100px;
+  height:100vh
 }
 .profileImages{
   display:flex;
@@ -582,23 +583,11 @@ nav > a{
   margin-bottom: 10%;
 }
 @media screen and (max-width:1550px){
-  .image{
-    max-width:55%;
-    }
   .image::before{
     left: -7.5em;
 }
 .main__text{
-  width:60%;
-  height:100%;
-  padding:5%;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-}
-.main__text h1{
-  /* font-size: 3.5rem; */
+  /* width:60%; */
 }
 .main img{
   width:110%
@@ -612,33 +601,24 @@ nav > a{
 }
 }
 @media screen and (max-width:1450px){
-  .image::before{
-    left: -7.4em;
-    top:50%;
+  /* .image::before{
+    left: -7.28em;
+} */
+.main__text{
+  /* width:65%; */
 }
 }
 
 @media screen and (max-width:1380px){
-  .image{
-    max-width:50%;
-    height:100%;
-    position: relative;
-    overflow: hidden;
-    }
+
   .image::before{
-    /* left: -8.7em; */
+    left: -7.2em;
 }
 .main__text{
-  width:55%;
-  height:100%;
-  padding:5%;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+  width:920px;
 }
 .main__text h1{
-  /* font-size: 3.5rem; */
+  /* font-size: 3.8rem; */
 }
 .main img{
   width:125%
@@ -671,7 +651,7 @@ nav > a{
 }
 @media screen and (max-width:1184px){
 .main__text{
-  width:70%;
+  /* width:70%; */
   z-index: 1;
 }
 .main__text h1{
