@@ -601,24 +601,28 @@ nav > a{
 }
 }
 @media screen and (max-width:1450px){
-  /* .image::before{
-    left: -7.28em;
-} */
+  .image::before{
+    left: -7.2em;
+  }
 .main__text{
-  /* width:65%; */
+  width:900px;
 }
 }
 
 @media screen and (max-width:1380px){
-
-  .image::before{
-    left: -7.2em;
+.image{
+  max-width: 1200px;
+}
+.image::before{
+  left: -7.5em;
+  width:35%;
 }
 .main__text{
-  width:920px;
+  max-width:1000px;
+  z-index: 1;
 }
 .main__text h1{
-  /* font-size: 3.8rem; */
+  font-size: 4rem;
 }
 .main img{
   width:125%
@@ -632,9 +636,6 @@ nav > a{
 }
 }
 @media screen and (max-width:1250px) {
-  .image::before{
-    /* left: -6.5em; */
-}
 .main img{
   width:135%
 }
@@ -651,15 +652,14 @@ nav > a{
 }
 @media screen and (max-width:1184px){
 .main__text{
-  /* width:70%; */
-  z-index: 1;
+  width:1200px;
 }
 .main__text h1{
   font-size: 3.5rem;
 }
-.image{
+/* .image{
   width:75%;
-}
+} */
 .main img{
   width:140%;
 }
