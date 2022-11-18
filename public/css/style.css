@@ -590,7 +590,7 @@ nav > a{
   /* width:60%; */
 }
 .main img{
-  width:110%
+  width:120%
 }
 .introduction{
   width:280px; 
@@ -625,7 +625,7 @@ nav > a{
   font-size: 4rem;
 }
 .main img{
-  width:125%
+  width:130%
 }
 .introduction{
   width:280px; 
@@ -636,8 +636,19 @@ nav > a{
 }
 }
 @media screen and (max-width:1250px) {
+  .image{
+    max-width: 1200px;
+  }
+  .image::before{
+    left: -7.3em;
+    width:40%;
+  }
+  .main__text{
+    max-width:1100px;
+    z-index: 1;
+  }
 .main img{
-  width:135%
+  width:140%
 }
 .profileImages{ 
   padding:50px;
@@ -650,22 +661,19 @@ nav > a{
   height:450px
 }
 }
-@media screen and (max-width:1184px){
+@media screen and (max-width:1190px){
 .main__text{
-  width:1200px;
+  width:1100px;
 }
 .main__text h1{
-  font-size: 3.5rem;
+  font-size: 3.8rem;
 }
-/* .image{
-  width:75%;
-} */
 .main img{
-  width:140%;
+  width:150%;
 }
 .image::before{
-  left: -6.4em;
-  width:40%;
+  left: -7.2em;
+  width:45%;
 }
 .profileImages{ 
   width:90%;
