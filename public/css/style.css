@@ -631,7 +631,7 @@ nav > a{
   width:130%
 }
 .introduction{
-  width:280px; 
+  width:260px; 
 }
 .profileImages{ 
   padding:50px;
@@ -653,12 +653,8 @@ nav > a{
 .main img{
   width:140%
 }
-.profileImages{ 
-  padding:50px;
-  width:100%;
-}
 .introduction{
-  width:250px; 
+  width:245px; 
 }
 .introduction img{
   height:450px
@@ -742,6 +738,10 @@ nav > a{
 @media screen and (max-width:900px){
   .image::before{
     width:65%;
+  }
+  .profileImages{ 
+    padding:50px;
+    width:100%;
   }
   .cta-text{
     flex-direction: column;
