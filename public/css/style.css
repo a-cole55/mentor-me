@@ -409,6 +409,9 @@ nav > a{
   align-items: center;
   margin-top: 8%;
 }
+.cta{
+  min-height: 40vh;
+}
 .cta-text{
   background-color: rgba(249, 249, 249, 0.9);
   padding:5% 15%;
