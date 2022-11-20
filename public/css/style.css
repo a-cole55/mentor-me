@@ -672,7 +672,7 @@ nav > a{
   width:150%;
 }
 .image::before{
-  left: -7.2em;
+  left: -7.3em;
   width:45%;
 }
 .profileImages{ 
@@ -690,6 +690,9 @@ nav > a{
 }
 
 @media screen and (max-width:1050px){
+  .image::before{
+    width:50%;
+  }
 .cta-heading{
   margin-right: 5%;
 }
@@ -702,12 +705,6 @@ nav > a{
 }
 }
 @media screen and (max-width:1000px){
-  .main__text h1{
-    font-size: 3.5rem;
-}
-.image::before{
-  width:45%;
-}
 /*Home Main*/
 .main__text h1{
   font-size: 3.5rem;
@@ -723,17 +720,16 @@ nav > a{
 }
 
 }
-@media screen and (max-width:948px){
+@media screen and (max-width:960px){
   .main img{
-    width:155%;
+    width:170%;
   }
 .main__text{
-  z-index: 1;
-  width:700px
+  width:1300px
 }
 .image::before{
-  width:48%;
-  left: -6.25em;
+  width:60%;
+  left:-7.3em;
 }
 .profileImages{ 
   padding:50px;
@@ -742,7 +738,7 @@ nav > a{
 }
 @media screen and (max-width:900px){
   .image::before{
-    width:50%;
+    width:65%;
   }
   .cta-text{
     flex-direction: column;
