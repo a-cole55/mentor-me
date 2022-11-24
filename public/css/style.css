@@ -20,10 +20,19 @@ body {
 a:hover{
   text-decoration: none;
 }
-.pop-out
+
+/*Team Images*/
+.pop-out-min-zoom, .pop-out
 {
     transition: transform .5s;
 }
+.pop-out-min-zoom:hover
+{
+    -ms-transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+}
+
 .pop-out:hover
 {
     -ms-transform: scale(1.25, 1.25);
@@ -923,12 +932,15 @@ width:100px;
   background-color:#8a97a0;
   border-color:#8a97a0;
 }
-#team{
-  margin: 5% 0;
-}
+
 .introduction{
   width:280px; 
+  margin-top: 25px;
 }
+.introduction:first-child{
+  margin-top: 0;
+}
+
 .cta-heading > span:first-child{
   font-size: 26px;
 }
