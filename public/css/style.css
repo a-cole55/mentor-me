@@ -20,6 +20,16 @@ body {
 a:hover{
   text-decoration: none;
 }
+.pop-out
+{
+    transition: transform .5s;
+}
+.pop-out:hover
+{
+    -ms-transform: scale(1.25, 1.25);
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
+}
 /*Footer*/
 footer{
   background-color: rgba(0,0,0,0.9);
