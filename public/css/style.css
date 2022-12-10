@@ -8,8 +8,8 @@
   margin: 0;
 }
 *:hover{
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 body {
   font-family: 'Montserrat', sans-serif;
